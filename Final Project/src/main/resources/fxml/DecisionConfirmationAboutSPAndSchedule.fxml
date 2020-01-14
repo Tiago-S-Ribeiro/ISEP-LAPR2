@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr2.ClientServicesProvider.aplicationagpsd.Controllers.DecideAboutSPAndScheduleController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4b4b4c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <ListView fx:id="lstViewAffections" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="232.0" prefWidth="450.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <Label alignment="BOTTOM_LEFT" prefHeight="57.0" prefWidth="242.0" text="Affections to the order" textFill="WHITE" BorderPane.alignment="BOTTOM_CENTER">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Label>
+         </top>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #4b4b4c;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnBackAffection" mnemonicParsing="false" onAction="#backAffection" prefHeight="33.0" prefWidth="92.0" style="-fx-background-color: #fb7439;" text="Back" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnConfirmAffection" mnemonicParsing="false" onAction="#confirmAffection" prefHeight="33.0" prefWidth="87.0" style="-fx-background-color: #fb7439;" text="Confirm" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+      <Pane prefHeight="75.0" prefWidth="104.0">
+         <children>
+            <ImageView fitHeight="52.0" fitWidth="80.0" layoutX="9.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

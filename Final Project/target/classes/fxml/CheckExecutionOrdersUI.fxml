@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr2.ClientServicesProvider.aplicationagpsd.Controllers.CheckExecutionOrdersController">
+    <stylesheets>
+        <URL value="@/styles/checkexecutionordersui.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="400.0" prefWidth="741.0" style="-fx-background-color: #4b4b4c;">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="93.0" layoutX="65.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="22.0" layoutY="82.0" prefHeight="17.0" prefWidth="191.0" text="EXECUTION ORDERS" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="23.0" />
+               </font>
+            </Label>
+            <ListView fx:id="executionOrdersList" layoutX="231.0" prefHeight="346.0" prefWidth="510.0" />
+            <Button layoutX="548.0" layoutY="358.0" mnemonicParsing="false" onAction="#exportXLS" prefHeight="29.0" prefWidth="75.0" style="-fx-background-color: #fb7439;" text=".XLS" textFill="WHITE" fx:id="xlsBtn">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="654.0" layoutY="358.0" mnemonicParsing="false" onAction="#exportXML" prefHeight="29.0" prefWidth="75.0" style="-fx-background-color: #fb7439;" text=".XML" textFill="WHITE" fx:id="xmlBtn">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="csvBtn" layoutX="442.0" layoutY="358.0" mnemonicParsing="false" onAction="#exportCSV" prefHeight="29.0" prefWidth="75.0" style="-fx-background-color: #fb7439;" text=".CSV" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="231.0" layoutY="359.0" prefHeight="27.0" prefWidth="191.0" text="Export your Execution Orders :" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="16.0" layoutY="110.0" prefWidth="200.0" />
+            <Button fx:id="backBtn" layoutX="28.0" layoutY="341.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="100.0" style="-fx-background-color: #fb7439;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="20.0" layoutY="120.0" prefHeight="21.0" prefWidth="200.0" text="Choose time period you want to" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="138.0" prefHeight="21.0" prefWidth="191.0" text="consult your execution orders :" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorMsgLbl" layoutX="79.0" layoutY="284.0" prefHeight="17.0" prefWidth="57.0" textFill="RED">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="consultOrdersBtn" layoutX="56.0" layoutY="233.0" mnemonicParsing="false" onAction="#consultOrders" prefHeight="21.0" prefWidth="116.0" style="-fx-background-color: #fb7439;" text="Consult Orders" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <DatePicker fx:id="date1" editable="false" layoutX="14.0" layoutY="194.0" prefHeight="25.0" prefWidth="100.0" />
+            <DatePicker fx:id="date2" editable="false" layoutX="120.0" layoutY="194.0" prefHeight="25.0" prefWidth="94.0" />
+            <Label layoutX="16.0" layoutY="175.0" text="Start" textFill="WHITE" />
+            <Label layoutX="193.0" layoutY="175.0" text="End" textFill="WHITE" />
+            <Label fx:id="errorMsgLbl2" layoutX="8.0" layoutY="310.0" prefHeight="17.0" prefWidth="234.0" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

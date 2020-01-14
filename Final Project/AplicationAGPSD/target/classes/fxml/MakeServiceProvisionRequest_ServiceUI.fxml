@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.aplicationagpsd.MakeServiceProvisionRequestController">
+    <stylesheets>
+        <URL value="@/styles/makeserviceprovisionrequestui.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="75.0" layoutY="51.0" text="Service Provision Request">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="categories" layoutX="190.0" layoutY="131.0" onAction="#categoriesChanged" prefHeight="27.0" prefWidth="215.0" promptText="Categorys" />
+      <Button fx:id="addServiceBtn" layoutX="198.0" layoutY="361.0" mnemonicParsing="false" onAction="#addService" prefHeight="25.0" prefWidth="82.0" text="Add Service" />
+      <ComboBox fx:id="services" layoutX="190.0" layoutY="180.0" prefHeight="27.0" prefWidth="215.0" promptText="Services" />
+      <TextArea fx:id="description" layoutX="190.0" layoutY="219.0" prefHeight="65.0" prefWidth="215.0" promptText="Description of the task" />
+      <TextField fx:id="duration" layoutX="190.0" layoutY="296.0" prefHeight="25.0" prefWidth="215.0" promptText="Duration" />
+      <Label layoutX="164.0" layoutY="333.0" text="Please enter the requested data and then click next." />
+      <Button fx:id="cNext" layoutX="316.0" layoutY="361.0" mnemonicParsing="false" onAction="#cNext" prefHeight="25.0" prefWidth="82.0" text="Next" />
+   </children>
+</AnchorPane>

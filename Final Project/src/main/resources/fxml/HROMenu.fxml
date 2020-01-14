@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr2.ClientServicesProvider.aplicationagpsd.Controllers.HROMenuController">
+    <stylesheets>
+        <URL value="@/styles/hromenu.css" />
+    </stylesheets>
+    <children>
+        <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4b4b4c;">
+            <children>
+                <Label layoutX="114.0" layoutY="38.0" text="HUMAN RESOURCES OFFICER MENU" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri" size="25.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="114.0" layoutY="73.0" prefHeight="2.0" prefWidth="372.0" />
+                <Button fx:id="registerServiceProviderBtn" layoutX="194.0" layoutY="172.0" mnemonicParsing="false" onAction="#registerServiceProvider" prefHeight="27.0" prefWidth="212.0" style="-fx-background-color: #FB7439;" text="Register Service Provider" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri" size="17.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="40.0" fitWidth="61.0" layoutX="17.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logo.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="evaluateServiceProviderBtn" layoutX="194.0" layoutY="237.0" mnemonicParsing="false" onAction="#evaluateServiceProvider" prefHeight="27.0" prefWidth="212.0" style="-fx-background-color: #FB7439;" text="Evaluate Service Providers" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri" size="17.0" />
+                    </font>
+                </Button>
+            <Button fx:id="signOutBtn" layoutX="525.0" layoutY="13.0" mnemonicParsing="false" onAction="#signOut" style="-fx-background-color: #4b4b4c; -fx-border-color: #ffff; -fx-background-insets: 0; -fx-border-radius: 20;" text="Sign Out" textFill="WHITE" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

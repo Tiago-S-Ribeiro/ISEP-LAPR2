@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="661.0" prefWidth="996.0" style="-fx-background-color: #4B4B4C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr2.ClientServicesProvider.aplicationagpsd.Controllers.ApplianceToServiceProviderController">
+    <children>
+        <Pane prefHeight="660.0" prefWidth="997.0">
+            <children>
+                <Label layoutX="89.0" layoutY="202.0" prefHeight="24.0" prefWidth="85.0" text="Full Name :" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="90.0" layoutY="239.0" prefHeight="24.0" prefWidth="99.0" text="Fiscal Nº (NIF) :" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="90.0" layoutY="276.0" prefHeight="24.0" prefWidth="85.0" text="Phone :" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="90.0" layoutY="314.0" prefHeight="24.0" prefWidth="85.0" text="E-mail :" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="90.0" layoutY="352.0" prefHeight="24.0" prefWidth="85.0" text="Address :" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="89.0" layoutY="84.0" prefHeight="2.0" prefWidth="879.0">
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect>
+                </Separator>
+                <Separator layoutX="89.0" layoutY="581.0" prefHeight="2.0" prefWidth="877.0" />
+                <ImageView fitHeight="48.0" fitWidth="61.0" layoutX="15.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logo.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="153.0" layoutY="20.0" prefHeight="26.0" prefWidth="805.0" text="APPLIANCE TO SERVICE PROVIDER" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri" size="22.0" />
+                    </font>
+                </Label>
+                <Button fx:id="confirmBtn" layoutX="858.0" layoutY="608.0" mnemonicParsing="false" onAction="#confirmAppliance" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #FB7439;" text="Confirm" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="discardBtn" layoutX="680.0" layoutY="606.0" mnemonicParsing="false" onAction="#discardAppliance" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #FB7439;" text="Discard" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Text fill="WHITE" layoutX="422.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLEASE CONFIRM YOUR INFORMATION:" wrappingWidth="267.4296569824219">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </Text>
+                <Label layoutX="89.0" layoutY="433.0" prefHeight="24.0" prefWidth="85.0" text="Locality :" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="90.0" layoutY="396.0" prefHeight="24.0" prefWidth="99.0" text="Postal-Code :" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="265.0" layoutY="392.0" prefHeight="24.0" prefWidth="7.0" text="-" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+            <Label fx:id="labelErrorAppliance" layoutX="89.0" layoutY="380.0" prefHeight="17.0" prefWidth="422.0" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" layoutX="178.0" layoutY="206.0" prefHeight="17.0" prefWidth="327.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nifLabel" layoutX="201.0" layoutY="243.0" prefHeight="20.0" prefWidth="310.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneLabel" layoutX="153.0" layoutY="277.0" prefHeight="20.0" prefWidth="342.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailLabel" layoutX="167.0" layoutY="317.0" prefHeight="20.0" prefWidth="339.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="addressLabel" layoutX="167.0" layoutY="353.0" prefHeight="17.0" prefWidth="327.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="postal1Label" alignment="CENTER" layoutX="194.0" layoutY="398.0" prefHeight="20.0" prefWidth="74.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="postal2Label" alignment="CENTER" layoutX="266.0" layoutY="398.0" prefHeight="20.0" prefWidth="74.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="localityLabel" layoutX="158.0" layoutY="435.0" prefHeight="17.0" prefWidth="327.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ListView fx:id="listViewAcademicConfirmation" blendMode="EXCLUSION" layoutX="570.0" layoutY="105.0" prefHeight="145.0" prefWidth="390.0" />
+            <ListView fx:id="listViewProfessionalConfirmation" blendMode="EXCLUSION" layoutX="570.0" layoutY="261.0" prefHeight="146.0" prefWidth="390.0" />
+            <ListView fx:id="listViewCategoriesConfirmation" blendMode="EXCLUSION" layoutX="570.0" layoutY="416.0" prefHeight="146.0" prefWidth="390.0" />
+            <Button fx:id="loadInfoBtn" layoutX="98.0" layoutY="607.0" mnemonicParsing="false" onAction="#loadInfoConfirmation" prefHeight="31.0" prefWidth="140.0" style="-fx-background-color: #FB7439;" text="Load Information" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: lapr2.ClientServicesProvider.aplicationagpsd.Model.GeographicAreaTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.124 s - in lapr2.ClientServicesProvider.aplicationagpsd.Model.GeographicAreaTest

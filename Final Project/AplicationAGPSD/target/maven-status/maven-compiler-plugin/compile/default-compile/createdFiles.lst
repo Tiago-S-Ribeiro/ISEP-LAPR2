@@ -1,0 +1,6 @@
+com\mycompany\aplicationagpsd\MainApp.class
+com\mycompany\aplicationagpsd\ClientRegistryController.class
+com\mycompany\aplicationagpsd\MakeServiceProvisionRequestController.class
+com\mycompany\aplicationagpsd\LoginController.class
+com\mycompany\aplicationagpsd\InitialPageController.class
+com\mycompany\aplicationagpsd\SubmitApplicationController.class

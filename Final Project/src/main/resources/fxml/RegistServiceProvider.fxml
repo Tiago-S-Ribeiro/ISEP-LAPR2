@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="lapr2.ClientServicesProvider.aplicationagpsd.Controllers.RegistServiceProviderController">
+   <children>
+      <Pane layoutX="-3.0" prefHeight="541.0" prefWidth="607.0" style="-fx-background-color: #4B4B4C;">
+         <children>
+            <TextField fx:id="txtFieldFullName" layoutX="203.0" layoutY="104.0" prefHeight="27.0" prefWidth="315.0" style="-fx-border-radius: 20; -fx-background-insets: 0; -fx-border-color: #989898; -fx-background-color: #4B4B4C;" styleClass="text-input" stylesheets="@../styles/clientregistryui.css" />
+            <Label layoutX="89.0" layoutY="104.0" prefHeight="24.0" prefWidth="85.0" text="Full Name :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFieldEmail" layoutX="219.0" layoutY="172.0" prefHeight="27.0" prefWidth="305.0" style="-fx-border-radius: 20; -fx-background-insets: 0; -fx-border-color: #989898; -fx-background-color: #4B4B4C;" styleClass="text-input" stylesheets="@../styles/clientregistryui.css" />
+            <TextField fx:id="txtFieldMecanNum" layoutX="249.0" layoutY="207.0" prefHeight="27.0" prefWidth="277.0" style="-fx-border-radius: 20; -fx-background-insets: 0; -fx-border-color: #989898; -fx-background-color: #4B4B4C;" styleClass="text-input" stylesheets="@../styles/clientregistryui.css" />
+            <TextField fx:id="txtFieldAbrevName" layoutX="203.0" layoutY="137.0" prefHeight="27.0" prefWidth="315.0" style="-fx-border-radius: 20; -fx-background-insets: 0; -fx-border-color: #989898; -fx-background-color: #4B4B4C;" styleClass="text-input" stylesheets="@../styles/clientregistryui.css" />
+            <Label layoutX="88.0" layoutY="174.0" prefHeight="24.0" prefWidth="131.0" text="Institutional Email :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="208.0" prefHeight="24.0" prefWidth="161.0" text="Mecanographic Number :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="89.0" layoutY="82.0" prefHeight="0.0" prefWidth="422.0">
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Separator>
+            <Separator layoutX="89.0" layoutY="456.0" prefHeight="0.0" prefWidth="422.0" />
+            <ImageView fitHeight="48.0" fitWidth="61.0" layoutX="15.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="181.0" layoutY="20.0" text="REGIST SERVICE PROVIDER" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnNext" layoutX="329.0" layoutY="468.0" mnemonicParsing="false" onAction="#next" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #FB7439;" text="Next" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancel" layoutX="186.0" layoutY="468.0" mnemonicParsing="false" onAction="#cancel" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #FB7439;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="186.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLEASE FILL IN THE INFORMATION:">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </Text>
+            <Label layoutX="89.0" layoutY="139.0" prefHeight="24.0" prefWidth="112.0" text="Abreviated Name:" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ListView fx:id="listViewCategories" layoutX="79.0" layoutY="271.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="160.0" prefWidth="450.0" style="-fx-background-insets: 0; -fx-background-color: #4B4B4C; -fx-opaque-insets: 0; -fx-border-color: #989898;" />
+            <Label layoutX="265.0" layoutY="240.0" prefHeight="24.0" prefWidth="77.0" text="Categories : " textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

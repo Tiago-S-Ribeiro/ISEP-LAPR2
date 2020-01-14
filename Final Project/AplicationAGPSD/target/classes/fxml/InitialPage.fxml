@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.aplicationagpsd.InitialPageController">
+    <stylesheets>
+        <URL value="@/styles/initialpage.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="74.0" layoutY="38.0" prefHeight="54.0" prefWidth="431.0" text="AGPSD - Home Page">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginBtn" layoutX="253.0" layoutY="174.0" mnemonicParsing="false" onAction="#login" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="registerBtn" layoutX="243.0" layoutY="235.0" mnemonicParsing="false" onAction="#register" text="Register">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="submitionBtn" layoutX="133.0" layoutY="293.0" mnemonicParsing="false" onAction="#submition" text="Submit Application for Service Provider">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

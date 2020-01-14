@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr2.ClientServicesProvider.aplicationagpsd.Controllers.RegistServiceProviderController">
+   <children>
+      <Pane prefHeight="407.0" prefWidth="607.0" style="-fx-background-color: #4B4B4C;">
+         <children>
+            <Separator layoutX="89.0" layoutY="82.0" prefHeight="0.0" prefWidth="422.0">
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Separator>
+            <ImageView fitHeight="48.0" fitWidth="61.0" layoutX="15.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="181.0" layoutY="20.0" text="REGIST SERVICE PROVIDER" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnNextArea" layoutX="430.0" layoutY="355.0" mnemonicParsing="false" onAction="#nextArea" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #FB7439;" text="Next" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancelArea" layoutX="94.0" layoutY="355.0" mnemonicParsing="false" onAction="#cancelArea" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #FB7439;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="101.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLEASE ENTER THE SERVICE PROVIDER´S GEOGRAPHIC AREAS">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </Text>
+            <Separator layoutX="93.0" layoutY="325.0" prefHeight="0.0" prefWidth="422.0">
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Separator>
+            <ListView fx:id="listViewCompanyAreas" layoutX="309.0" layoutY="119.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4B4B4C; -fx-background-insets: 0; -fx-border-color: #989898;" />
+            <ListView fx:id="listViewSPAreas" layoutX="99.0" layoutY="119.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4B4B4C; -fx-background-insets: 0; -fx-border-color: #989898;" />
+            <Label layoutX="136.0" layoutY="93.0" prefHeight="18.0" prefWidth="134.0" text="Service Provider´s Areas" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="336.0" layoutY="93.0" prefHeight="18.0" prefWidth="146.0" text="Available Geographic Areas" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAddArea" layoutX="199.0" layoutY="340.0" mnemonicParsing="false" onAction="#addArea" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #FB7439;" text="Add" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRemoveArea" layoutX="324.0" layoutY="340.0" mnemonicParsing="false" onAction="#removeArea" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #FB7439;" text="Remove" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

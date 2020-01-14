@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="348.0" prefWidth="430.0">
+         <children>
+            <Text layoutX="45.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postal Adress">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="44.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Site:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="44.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postal-Code:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Locality:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtFieldSite" layoutX="95.0" layoutY="106.0" prefHeight="29.0" prefWidth="308.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtFieldFirstPartPostalCode" layoutX="163.0" layoutY="157.0" prefHeight="25.0" prefWidth="124.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtFieldSecondPartPostalCode" layoutX="318.0" layoutY="157.0" prefHeight="29.0" prefWidth="83.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtFieldLocality" layoutX="123.0" layoutY="210.0" prefHeight="29.0" prefWidth="278.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Text layoutX="45.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please provide the following information:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnCancelPostalAdress" layoutX="114.0" layoutY="277.0" mnemonicParsing="false" text="Cancel">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSubmitPostalAdress" layoutX="255.0" layoutY="277.0" mnemonicParsing="false" text="Submit">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Text layoutX="296.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4b4b4c;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr2.ClientServicesProvider.aplicationagpsd.Controllers.ClientMenuController">
+    <stylesheets>
+        <URL value="@/styles/clientmenu.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="186.0" layoutY="33.0" text="CLIENT MENU" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="40.0" />
+         </font>
+      </Label>
+      <Separator layoutX="190.0" layoutY="87.0" prefHeight="0.0" prefWidth="228.0" />
+      <ImageView fitHeight="46.0" fitWidth="67.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="40.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="requestBtn" mnemonicParsing="false" onAction="#request" prefHeight="31.0" prefWidth="253.0" style="-fx-background-color: #FB7439;" text="Make Service Provision Request" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addressBtn" mnemonicParsing="false" onAction="#address" prefHeight="33.0" prefWidth="253.0" style="-fx-background-color: #FB7439;" text="Add an Address to Client sheet" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="rateServiceBtn" mnemonicParsing="false" onAction="#rateService" prefHeight="23.0" prefWidth="253.0" style="-fx-background-color: #FB7439;" text="Rate a Service" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDecideAffection" mnemonicParsing="false" onAction="#decideAffection" prefHeight="33.0" prefWidth="267.0" style="-fx-background-color: #FB7439;" text="Accept/Reject Affections to Orders" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="70.0" />
+               </BorderPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </center>
+      </BorderPane>
+      <Pane layoutX="431.0" prefHeight="112.0" prefWidth="169.0">
+         <children>
+            <Button fx:id="signOutBtn" layoutX="86.0" layoutY="17.0" mnemonicParsing="false" onAction="#signOut" prefHeight="21.0" prefWidth="66.0" style="-fx-background-color: #4b4b4c; -fx-border-color: #ffff; -fx-background-insets: 0; -fx-border-radius: 30;" text="Sign Out" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

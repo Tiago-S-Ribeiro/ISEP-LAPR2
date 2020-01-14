@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="223.0" prefWidth="607.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="lapr2.ClientServicesProvider.aplicationagpsd.Controllers.RegistServiceProviderController">
+   <children>
+      <Pane layoutY="-3.0" prefHeight="232.0" prefWidth="607.0" style="-fx-background-color: #4B4B4C;">
+         <children>
+            <TextField fx:id="txtFieldNIF" layoutX="241.0" layoutY="104.0" prefHeight="27.0" prefWidth="206.0" style="-fx-border-radius: 20; -fx-background-insets: 0; -fx-border-color: #989898; -fx-background-color: #4B4B4C;" styleClass="text-input" stylesheets="@../styles/clientregistryui.css" />
+            <Label layoutX="181.0" layoutY="105.0" prefHeight="24.0" prefWidth="44.0" text="NIF :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="89.0" layoutY="82.0" prefHeight="0.0" prefWidth="422.0">
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Separator>
+            <ImageView fitHeight="48.0" fitWidth="61.0" layoutX="15.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="181.0" layoutY="20.0" text="REGIST SERVICE PROVIDER" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnNextNIF" layoutX="335.0" layoutY="179.0" mnemonicParsing="false" onAction="#nextNIF" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #FB7439;" text="Next" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancelNIF" layoutX="181.0" layoutY="179.0" mnemonicParsing="false" onAction="#cancelNIF" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #FB7439;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="160.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLEASE ENTER THE SERVICE PROVIDER´S NIF">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </Text>
+            <Separator layoutX="89.0" layoutY="149.0" prefHeight="0.0" prefWidth="422.0">
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Separator>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

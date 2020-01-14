@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="360.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr2.ClientServicesProvider.aplicationagpsd.Controllers.DecideAvailabilityController">
+    <stylesheets>
+        <URL value="@/styles/decideavailabilityui.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="495.0" prefWidth="360.0" style="-fx-background-color: #4b4b4c;">
+         <children>
+            <Label layoutX="32.0" layoutY="56.0" prefHeight="0.0" prefWidth="297.0" text="DECIDE AVAILABILITY" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="34.0" />
+               </font>
+            </Label>
+            <Separator layoutX="32.0" layoutY="106.0" prefHeight="3.0" prefWidth="297.0" />
+            <ImageView fitHeight="40.0" fitWidth="52.0" layoutX="12.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <DatePicker fx:id="date1" editable="false" layoutX="58.0" layoutY="144.0" onAction="#chooseStartDate" prefHeight="27.0" prefWidth="242.0" style="-fx-background-color: #4b4b4c;" />
+            <DatePicker fx:id="date2" editable="false" layoutX="58.0" layoutY="214.0" onAction="#chooseEndDate" prefHeight="27.0" prefWidth="242.0" style="-fx-background-color: #4b4b4c;" />
+            <Label layoutX="58.0" layoutY="119.0" text="Choose the start Date:" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="187.0" text="Choose the end Date:" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="startHour" layoutX="177.0" layoutY="293.0" prefHeight="27.0" prefWidth="52.0" promptText="HH" />
+            <TextField fx:id="startMinute" layoutX="250.0" layoutY="292.0" prefHeight="27.0" prefWidth="52.0" promptText="MM" />
+            <TextField fx:id="endMinute" layoutX="250.0" layoutY="329.0" prefHeight="27.0" prefWidth="52.0" promptText="MM" />
+            <TextField fx:id="endHour" layoutX="177.0" layoutY="329.0" prefHeight="27.0" prefWidth="52.0" promptText="HH" />
+            <Label layoutX="60.0" layoutY="293.0" prefHeight="27.0" prefWidth="65.0" text="Start Time :" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="329.0" prefHeight="27.0" prefWidth="65.0" text="End Time :" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="32.0" layoutY="257.0" prefHeight="3.0" prefWidth="297.0" />
+            <Label layoutX="237.0" layoutY="284.0" prefHeight="27.0" prefWidth="13.0" text=":" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="237.0" layoutY="321.0" prefHeight="27.0" prefWidth="13.0" text=":" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="leaveBtn" layoutX="83.0" layoutY="443.0" mnemonicParsing="false" onAction="#leave" prefHeight="27.0" prefWidth="64.0" style="-fx-background-color: #FB7439;" text="Leave" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="confirmBtn" layoutX="218.0" layoutY="443.0" mnemonicParsing="false" onAction="#newAvailability" style="-fx-background-color: #FB7439;" text="Confirm" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Separator layoutX="59.0" layoutY="388.0" prefHeight="3.0" prefWidth="242.0" />
+            <Label layoutX="97.0" layoutY="370.0" prefHeight="9.0" prefWidth="161.0" text="Unavailable from 24:00 to 06:00" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="244.0" layoutY="269.0" prefHeight="14.0" prefWidth="64.0" text="24h Format" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="wrongInfoLbl" layoutX="42.0" layoutY="407.0" prefHeight="18.0" prefWidth="278.0" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

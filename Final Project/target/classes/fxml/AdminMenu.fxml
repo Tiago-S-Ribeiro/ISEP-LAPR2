@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr2.ClientServicesProvider.aplicationagpsd.Controllers.AdminMenuController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="604.0" style="-fx-background-color: #4b4b4c;">
+         <children>
+            <Label layoutX="153.0" layoutY="41.0" prefHeight="28.0" prefWidth="298.0" text="ADMINISTRATOR MENU" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="specifyCatBtn" layoutX="202.0" layoutY="151.0" mnemonicParsing="false" onAction="#specifyCategory" prefHeight="20.0" prefWidth="209.0" style="-fx-background-color: #FB7439;" text="Specify Category" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="specifyGeoAreaBtn" layoutX="202.0" layoutY="286.0" mnemonicParsing="false" onAction="#specifyGeographicArea" prefHeight="34.0" prefWidth="209.0" style="-fx-background-color: #FB7439;" text="Specify Geographic Area" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="specifyServBtn" layoutX="202.0" layoutY="219.0" mnemonicParsing="false" onAction="#specifyService" prefHeight="27.0" prefWidth="209.0" style="-fx-background-color: #FB7439;" text="Specify Service" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Separator layoutX="153.0" layoutY="75.0" prefHeight="0.0" prefWidth="298.0" />
+            <ImageView fitHeight="45.0" fitWidth="68.0" layoutX="18.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="signOutBtn" layoutX="519.0" layoutY="20.0" mnemonicParsing="false" onAction="#signOut" style="-fx-background-color: #4b4b4c; -fx-border-color: #ffff; -fx-background-insets: 0; -fx-border-radius: 20;" text="Sign Out" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
