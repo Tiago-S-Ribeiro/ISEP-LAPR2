@@ -42,7 +42,9 @@ Obtained after loggin in with a registered Service Provider e-mail / pass.
 
 
 ##### Indicate Availability
+
 Service Providers can indicate their availability on a period of time.
+
 ![IndicateAvailability.png](Images/IndicateAvailability.png)
 
 
@@ -53,22 +55,30 @@ By clicking on the Calendar Icon, Service Providers can choose the Start day and
 
 
 ##### Consult Execution Orders
+
 This allows Service Providers to consult the execution orders attributed to them, considering their availability. Allows aswell the Service Provider to export the said orders into a CSV, XLS or XML file.
+
 ![ConsultExecutionOrders.png](Images/ConsultExecutionOrders.png)
 
 
 ##### Appliance to Service Provider - Qualifications
+
 After choosing the "Submit Application" option in the Home Page, and filling the standard information (similar to Registration Menu shown above), appliers are given the chance to enter their Academic and Professional qualifications.
+
 ![ApplianceToSPView.png](Images/ApplianceToSPView.png)
 
 
 ##### Appliance to Service Provider - Categories
+
 After the above, appliers get to choose from the Company's available types of provided services.
+
 ![ApplianceCategoryChoices.png](Images/ApplianceCategoryChoices.png)
 
 
 ##### Service Provider App Main View
+
 This is the view from the Service Provider App. Intended for Service Providers to consult the file/s exported from the previous login in the main application.
+
 ![ServiceProviderApp.png](Images/ServiceProviderApp.png)
 
 
