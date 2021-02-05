@@ -1,4 +1,4 @@
-# ISEP-LAPR2-2018
+# ISEP-LAPR2-2018/19
 
 Final Project of the Laboratory/Project II unit course.
 The previous, was done in Java and JavaFX [1], using SceneBuilder.
