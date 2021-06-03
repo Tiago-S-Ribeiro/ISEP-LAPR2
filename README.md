@@ -87,3 +87,14 @@ This is the view from the Service Provider App. Intended for Service Providers t
 #### References
 [1] - https://en.wikipedia.org/wiki/JavaFX
 
+
+-----------------
+This was the group I completed this unit course with:
+| Name               |
+| ------------------ |
+| Tiago Ribeiro      |
+| Rafael Moreira     |
+| Tiago Dias         |
+| Pedro Água         |
+| Bernardo Carvalho  |
+
